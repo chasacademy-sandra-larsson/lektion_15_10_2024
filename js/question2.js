@@ -1,10 +1,11 @@
 /* Byta plats på två variabler */
 
-a = 10;
-b = 5;
+let a = 10;
+let b = 5;
 
-temp = a;
+let temp = a;
 a = b;
 b = temp;
 
-console.log("a", a, "b", b);
+
+console.log("a", a, "b", b); // a 5 b 10

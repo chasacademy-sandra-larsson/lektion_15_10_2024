@@ -8,3 +8,5 @@
 const payment = 2000;
 const totalPrice = 850;
 
+// % - modulooperatorn 
+
