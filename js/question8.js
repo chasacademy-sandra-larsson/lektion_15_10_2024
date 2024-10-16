@@ -10,3 +10,5 @@ const totalPrice = 850;
 
 // % - modulooperatorn 
 
+
+

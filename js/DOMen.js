@@ -2,7 +2,15 @@
 document.addEventListener("DOMContentLoaded", function () {
 
     // Referens till myParagraph
-    const element = document.getElementById("myParagraph");
+    const element = document.getElementById("sum");
+
+    // Referens till knappen
+    const btn = document.getElementById("btn");
+    btn.addEventListener("click", btnClicked);
+
+    function btnClicked() {
+        console.log("Button clicked");
+    }
     
 
     // Eventlyssnare på formuläret
@@ -14,11 +22,15 @@ document.addEventListener("DOMContentLoaded", function () {
     function getFormValues(event) {
         event.preventDefault();
 
-        let value1 = form["value1"].value;
-        let value2 = form["value1"].value;
+        let value1 = parseInt(form["value1"].value);
+        let value2 = parseInt(form["value2"].value);
 
-        console.log(value1, value2);
-        element.textContent = value1;
+        console.log(typeof value1);
+        console.log(typeof value2);
+
+        let sum = value1 + value2;
+
+        element.textContent = sum;
 
     }
 
