@@ -4,4 +4,4 @@
 // Funktion att kovertera Fahrenheit till Celsius
 
 
-// Exampe
+// Exampel
